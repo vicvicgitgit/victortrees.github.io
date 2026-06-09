@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="MONKI en numerieke methoden ontwikkeld door Victor Trees voor gepolariseerd stralingstransport in planeetatmosferen." name="description"/>
+<title>Software &amp; methoden | Victor Trees</title>
+<link href="../css/style.css" rel="stylesheet"/>
+<link href="../software.html" hreflang="en" rel="alternate"/><link href="software.html" hreflang="nl" rel="alternate"/></head>
+<body>
+<header class="site-header">
+<div class="nav-wrap">
+<a class="brand" href="index.html">Victor Trees <span>gepolariseerd licht · aardobservatie · Venus · exoplaneten</span></a>
+<button aria-controls="nav-links" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+<nav aria-label="Main navigation" class="nav-links" id="nav-links">
+<a href="index.html">Home</a>
+<a href="research.html">Onderzoek</a>
+<a class="active" href="software.html">Software</a>
+<a href="publications.html">Publicaties</a>
+<a href="news.html">Nieuws</a>
+<a href="talks.html">Lezingen</a>
+<a href="cv.html">CV</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div aria-label="Language switcher" class="lang-switch"><a href="../software.html" hreflang="en" lang="en"><span aria-hidden="true" class="flag">🇬🇧</span><span>EN</span></a><a class="active" href="software.html" hreflang="nl" lang="nl"><span aria-hidden="true" class="flag">🇳🇱</span><span>NL</span></a></div></div>
+</header>
+<main>
+<section class="page-title card page-card">
+<h1>Software &amp; methoden</h1>
+<p>
+        Ik ontwikkel numerieke methoden die de fysica van gepolariseerd licht vertalen naar simulaties van waarnemingen van planeetatmosferen. De centrale code is MONKI: een driedimensionale Monte Carlo-stralingstransportcode geschreven in Fortran.
+      </p>
+</section>
+<section class="section method-building-section">
+<div class="section-header">
+<h2>Hoe de methoden zijn opgebouwd</h2>
+</div>
+<div class="grid two method-building-grid">
+<article class="card">
+<h3>Afleiding vanuit de basisfysica</h3>
+<p>
+            De werkvergelijkingen voor gepolariseerd stralingstransport afleiden vanuit de onderliggende natuurkunde, in plaats van het model als een black box te behandelen.
+          </p>
+</article>
+<article class="card">
+<h3>Numerieke implementatie</h3>
+<p>
+            De fysica vertalen naar robuuste Fortran-code, inclusief fotonpaden, verstrooiingsgebeurtenissen, Stokes-vectorboekhouding, absorptie en statistische convergentie.
+          </p>
+</article>
+<article class="card">
+<h3>Benchmarking en validatie</h3>
+<p>
+            Modeluitvoer vergelijken met gevestigde stralingstransportbenchmarks en afwijkingen gebruiken om de methode en implementatie te verbeteren.
+          </p>
+</article>
+<article class="card">
+<h3>Fysische interpretatie</h3>
+<p>
+            Simulaties gebruiken om te verklaren waarom specifieke radiantie- en polarisatiesignaturen ontstaan in aardobservatie, Venus- en exoplaneetwaarnemingen.
+          </p>
+</article>
+</div>
+</section>
+
+<section class="section">
+<div class="method-panel-list">
+<article class="card method-panel">
+<div class="method-panel-text">
+<p class="date">MONKI · 3D Monte Carlo-stralingstransport</p>
+<h2>Driedimensionaal stralingstransport voor totale en gepolariseerde straling</h2>
+<p>
+              MONKI is de belangrijkste codeontwikkeling in mijn werk: een driedimensionaal Monte Carlo-stralingstransportmodel voor totale en gepolariseerde straling die door planeetatmosferen wordt gereflecteerd en doorgelaten. Ik heb de Fortran-code vanaf nul geschreven, inclusief fotonsampling, de local-estimation-methode, polarisatieboekhouding, absorptiebehandeling en parallelle uitvoering voor grote atmosferische simulaties.
+            </p>
+<p>
+              De code kan worden gebruikt voor horizontaal homogene atmosferen en voor volledig driedimensionale scènes, zoals wolkenvelden uit atmosferische modellen. Daarmee vormt MONKI een brug tussen fundamentele verstrooiingsfysica en gesimuleerde waarnemingen van de Aarde, Venus en aardachtige exoplaneten.
+            </p>
+<div class="tag-list">
+<span class="tag">Fortran</span>
+<span class="tag">Monte Carlo</span>
+<span class="tag">Polarisatie</span>
+<span class="tag">3D-wolken</span>
+</div>
+<div class="link-list">
+<a href="https://doi.org/10.5194/egusphere-2025-2197">MONKI-paper</a>
+<a href="https://doi.org/10.5281/zenodo.15380811">Zenodo-codearchief</a>
+</div>
+</div>
+<div class="method-figure-stack">
+<figure class="theme-image">
+<img alt="MONKI simulation of intensity and degree of polarisation for a 3D cloudy atmosphere" src="../img/software/monki-simulation.png"/>
+<figcaption>MONKI-simulatie van intensiteit en polarisatiegraad in een 3D-bewolkte atmosfeer. Figuur door Victor J. H. Trees.</figcaption>
+</figure>
+<figure class="theme-image">
+<img alt="Sketch of the 3D MONKI computational domain and photon trajectories" src="../img/software/monki.png"/>
+<figcaption>Fotontrajecten en local estimation in het 3D-rekendomein van MONKI. Figuur aangepast uit Trees et al. (2025).</figcaption>
+</figure>
+</div>
+</article>
+<article class="card method-panel">
+<div class="method-panel-text">
+<p class="date">DARCLOS · TROPOMI-wolkenschaduwdetectie</p>
+<h2>Verplaatste wolkenschaduwen detecteren in satellietwaarnemingen</h2>
+<p>
+              DARCLOS is een methode voor het detecteren van wolkenschaduwen in TROPOMI-data. De methode gebruikt de geometrie van de zon, wolkhoogte, locatie op het oppervlak en satellietkijkrichting om te bepalen waar een wolkenschaduw op het aardoppervlak hoort te liggen, ook al wordt de wolk zelf door de satelliet op een andere schijnbare locatie gezien.
+            </p>
+<p>
+              De resulterende wolkenschaduwflag helpt scènes te identificeren waarin driedimensionale wolkeneffecten gemeten reflectanties en afgeleide atmosferische producten beïnvloeden. Dit sluit direct aan op mijn aardobservatiewerk aan aerosolen, oppervlaktereflectie en de fysische interpretatie van satellietmetingen.
+            </p>
+<div class="tag-list">
+<span class="tag">TROPOMI</span>
+<span class="tag">Wolkenschaduwen</span>
+<span class="tag">Geometrie</span>
+<span class="tag">Aardobservatie</span>
+</div>
+<div class="link-list">
+<a href="https://doi.org/10.5194/amt-15-3121-2022">DARCLOS-paper</a>
+</div>
+</div>
+<div class="method-figure-stack">
+<figure class="theme-image">
+<img alt="VIIRS true-colour scene and DARCLOS cloud-shadow flag on the TROPOMI grid" src="../img/software/darclos-example.png"/>
+<figcaption>VIIRS true-colourbeeld naast de DARCLOS-wolkenschaduwflag op het TROPOMI-grid. Figuur aangepast uit Trees et al. (2022).</figcaption>
+</figure>
+<figure class="theme-image">
+<img alt="Sketch of the cloud-shadow geometry used in DARCLOS" src="../img/software/darclos.png"/>
+<figcaption>Geometrie die de schijnbare wolkenpixel, de werkelijke wolkpositie en de verschoven schaduw met elkaar verbindt. Figuur aangepast uit Trees et al. (2022).</figcaption>
+</figure>
+</div>
+</article>
+<article class="card method-panel">
+<div class="method-panel-text">
+<p class="date">Zonsverduisteringscorrectie · reflectantieherstel</p>
+<h2>Satellietreflectanties herstellen tijdens zonsverduisteringen</h2>
+<p>
+              De zonsverduisteringscorrectie berekent voor elke satellietpixel welk deel van de zonneschijf door de maan wordt geblokkeerd en gebruikt die geometrie om reflectanties aan de top van de atmosfeer te herstellen. Daarmee veranderen eclipsscènes van problematische waarnemingen in bruikbare metingen van de atmosfeer binnen de gedeeltelijke maanschaduw.
+            </p>
+<p>
+              Ik ontwikkelde deze correctie om te onderzoeken hoe verminderd zonlicht gemeten stralingsvelden beïnvloedt. Later maakte de methode het mogelijk om de snelle reactie van ondiepe cumuluswolken op zonsverduisteringen te bestuderen, en zo stralingstransport, satellietwaarnemingen en wolkenfysica met elkaar te verbinden.
+            </p>
+<div class="tag-list">
+<span class="tag">Zonsverduisteringen</span>
+<span class="tag">Reflectantiecorrectie</span>
+<span class="tag">TROPOMI</span>
+<span class="tag">Wolkenrespons</span>
+</div>
+<div class="link-list">
+<a href="https://doi.org/10.5194/acp-21-8593-2021">Eclips-correctiepaper</a>
+<a href="https://doi.org/10.1038/s43247-024-01213-0">Wolkenrespons-paper</a>
+</div>
+</div>
+<div class="method-figure-stack">
+<figure class="theme-image">
+<img alt="Satellite images during the 2005 solar eclipse before and after correction for reduced sunlight" src="../img/software/eclipse-correction-example.png"/>
+<figcaption>Satellietreflectanties tijdens de zonsverduistering van 3 oktober 2005 vóór en na correctie voor verminderd zonlicht. Figuur door Victor J. H. Trees.</figcaption>
+</figure>
+<figure class="theme-image">
+<img alt="Sketch of the solar and lunar disk geometry used in the eclipse-correction method" src="../img/software/eclipse-correction.png"/>
+<figcaption>Geometrie van de zonne- en maanschijf gebruikt om de eclipsobscuratie te berekenen. Figuur aangepast uit Trees et al. (2021).</figcaption>
+</figure>
+</div>
+</article>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-wrap">
+<span>© <span id="year">2026</span> Victor Trees</span>
+<span><a href="credits.html">Beeldverantwoording</a></span>
+</div>
+</footer>
+<script src="../js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

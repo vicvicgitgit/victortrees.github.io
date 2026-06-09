@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Research themes of Victor Trees: polarised radiative transfer, Earth observation, Venus, and Earth-like exoplanets." name="description"/>
+<title>Research | Victor Trees</title>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="research.html" hreflang="en" rel="alternate"/><link href="nl/research.html" hreflang="nl" rel="alternate"/></head>
+<body>
+<header class="site-header">
+<div class="nav-wrap">
+<a class="brand" href="index.html">Victor Trees <span>polarised light physics · Earth observation · Venus · exoplanets</span></a>
+<button aria-controls="nav-links" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+<nav aria-label="Main navigation" class="nav-links" id="nav-links">
+<a href="index.html">Home</a>
+<a class="active" href="research.html">Research</a>
+<a href="software.html">Software</a>
+<a href="publications.html">Publications</a>
+<a href="news.html">News</a>
+<a href="talks.html">Talks</a>
+<a href="cv.html">CV</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div aria-label="Language switcher" class="lang-switch"><a class="active" href="research.html" hreflang="en" lang="en"><span aria-hidden="true" class="flag">🇬🇧</span><span>EN</span></a><a href="nl/research.html" hreflang="nl" lang="nl"><span aria-hidden="true" class="flag">🇳🇱</span><span>NL</span></a></div></div>
+</header>
+<main>
+<section class="page-title card page-card">
+<p class="date">Research</p>
+<h1>From polarised light physics to planetary atmosphere observations</h1>
+<p>
+        I study how light is scattered, absorbed, reflected, and polarised by planetary atmospheres. My work combines first-principles radiative-transfer modelling with observations of Earth, Venus, and Earth-like exoplanets.
+      </p>
+</section>
+<section class="research-feature card" id="polarised-radiative-transfer">
+<figure class="theme-image research-feature-image">
+<img alt="MONKI simulation of intensity and degree of polarisation for a three-dimensional cloudy atmosphere" src="img/software/monki-simulation.png"/>
+<figcaption>MONKI simulation of intensity and degree of polarisation for a 3D cloudy atmosphere. Figure by Victor J. H. Trees.</figcaption>
+</figure>
+<div class="research-feature-content">
+<p class="date">Methodological foundation</p>
+<h2>Polarised radiative transfer</h2>
+<p>
+          The common thread in my research is the physics of reflected light. I develop and use radiative-transfer models that track how photons interact with molecules, aerosols, clouds, and surfaces, including the polarisation state of light.
+        </p>
+<p>
+          This foundation is what connects my different application areas. The same physical ideas are needed to interpret TROPOMI measurements of clouds and aerosols, simulate Venus for EnVision, and predict ocean signatures in future exoplanet observations.
+        </p>
+<div class="tag-list">
+<span class="tag">Stokes vectors</span>
+<span class="tag">Multiple scattering</span>
+<span class="tag">Monte Carlo</span>
+<span class="tag">3D atmospheres</span>
+</div>
+<div class="link-list">
+<a href="software.html">Software &amp; methods</a>
+<a href="publications.html">MONKI paper</a>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-header">
+<h2>Research themes</h2>
+</div>
+<div class="research-theme-list">
+<article class="research-feature card" id="earth-observation">
+<figure class="theme-image research-feature-image">
+<img alt="Artist's impression of the Copernicus Sentinel-5P satellite observing Earth" src="img/themes/earth_observation.jpg"/>
+<figcaption>Copernicus Sentinel-5P observing Earth's atmosphere. Credit: ESA/ATG medialab.</figcaption>
+</figure>
+<div class="research-feature-content">
+<p class="date">Earth observation</p>
+<h2>Clouds, aerosols, shadows, and solar eclipses in satellite data</h2>
+<p>
+              My Earth-observation work focuses on situations where the measured radiation field is shaped by three-dimensional cloud structure and changing illumination. These effects are often treated as complications in satellite retrievals, but they also contain physical information.
+            </p>
+<p>
+              During my PhD at TU Delft and KNMI, I developed DARCLOS to detect cloud shadows in TROPOMI data and a method to restore top-of-atmosphere reflectances during solar eclipses. The eclipse correction made it possible to use eclipses as natural experiments, leading to the discovery that shallow cumulus clouds over land can dissipate rapidly when sunlight is partly reduced. This has implications for how clouds may respond to proposed sunlight-reduction climate-intervention ideas.
+            </p>
+<div class="tag-list">
+<span class="tag">TROPOMI</span>
+<span class="tag">Cloud shadows</span>
+<span class="tag">Solar eclipses</span>
+<span class="tag">Geoengineering relevance</span>
+</div>
+<div class="link-list">
+<a href="publications.html">Earth-observation papers</a>
+<a href="software.html#darclos">DARCLOS</a>
+<a href="software.html#eclipse-correction">Eclipse correction</a>
+</div>
+</div>
+</article>
+<article class="research-feature card" id="venus">
+<figure class="theme-image research-feature-image">
+<img alt="Venus as seen by NASA's Mariner 10 spacecraft" src="img/themes/venus.jpg"/>
+<figcaption>Venus as seen by NASA's Mariner 10 spacecraft. Credit: NASA/JPL-Caltech.</figcaption>
+</figure>
+<div class="research-feature-content">
+<p class="date">Venus</p>
+<h2>Spectropolarimetry for ESA's EnVision mission</h2>
+<p>
+              Venus is a nearby laboratory for testing radiative transfer in a thick, cloudy planetary atmosphere. In my postdoctoral work, I am adapting MONKI for Venus by extending it toward spherical atmospheres, refraction, and challenging twilight and limb-viewing geometries.
+            </p>
+<p>
+              The goal is to simulate spectra and polarisation for the VenSpec instruments onboard ESA's EnVision mission. These simulations help connect the fundamental physics of light scattering in Venus's atmosphere with future mission observations.
+            </p>
+<div class="tag-list">
+<span class="tag">EnVision</span>
+<span class="tag">VenSpec-H</span>
+<span class="tag">VenSpec-U</span>
+<span class="tag">Twilight geometry</span>
+</div>
+<div class="link-list">
+<a href="publications.html">Venus contribution</a>
+<a href="software.html#monki">MONKI</a>
+</div>
+</div>
+</article>
+<article class="research-feature card" id="exoplanets">
+<figure class="theme-image research-feature-image">
+<img alt="Artist's impression of the TRAPPIST-1 planetary system" src="img/themes/exoplanets.jpg"/>
+<figcaption>Artist's impression of the TRAPPIST-1 planetary system. Credit: ESO/M. Kornmesser.</figcaption>
+</figure>
+<div class="research-feature-content">
+<p class="date">Earth-like exoplanets</p>
+<h2>Oceans and clouds in reflected starlight</h2>
+<p>
+              Future telescopes will not resolve Earth-like exoplanets as images. Instead, they will measure faint reflected starlight from a single point. I study which signatures of oceans, clouds, and planetary surfaces survive in total flux, colour, and polarisation.
+            </p>
+<p>
+              My exoplanet work predicted ways to detect liquid-water oceans using polarised reflected light. These simulations were later used in a study of how NASA's future space-telescope concept, the Habitable Worlds Observatory, could detect such signatures around other worlds.
+            </p>
+<div class="tag-list">
+<span class="tag">Ocean glint</span>
+<span class="tag">Polarisation</span>
+<span class="tag">Direct imaging</span>
+<span class="tag">Habitable worlds</span>
+</div>
+<div class="link-list">
+<a href="publications.html">Exoplanet papers</a>
+<a href="https://www.nature.com/articles/s41550-019-0817-9">Nature Astronomy highlight</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="section">
+<article class="highlight-card">
+<p class="date">Connecting idea</p>
+<h2>One physics problem, three planetary settings</h2>
+<p>
+          Earth provides detailed observations for testing radiative-transfer ideas, Venus provides an extreme nearby atmosphere, and exoplanets provide the long-term motivation: interpreting weak reflected-light signals from distant worlds. Across these settings, the central question remains the same — what does measured light tell us about the atmosphere and surface that produced it?
+        </p>
+</article>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-wrap">
+<span>© <span id="year">2026</span> Victor Trees</span>
+<span><a href="credits.html">Image credits</a></span>
+</div>
+</footer>
+<script src="js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

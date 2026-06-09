@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="MONKI and numerical methods developed by Victor Trees for polarised radiative transfer in planetary atmospheres." name="description"/>
+<title>Software &amp; methods | Victor Trees</title>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="software.html" hreflang="en" rel="alternate"/><link href="nl/software.html" hreflang="nl" rel="alternate"/></head>
+<body>
+<header class="site-header">
+<div class="nav-wrap">
+<a class="brand" href="index.html">Victor Trees <span>polarised light physics · Earth observation · Venus · exoplanets</span></a>
+<button aria-controls="nav-links" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+<nav aria-label="Main navigation" class="nav-links" id="nav-links">
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a class="active" href="software.html">Software</a>
+<a href="publications.html">Publications</a>
+<a href="news.html">News</a>
+<a href="talks.html">Talks</a>
+<a href="cv.html">CV</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div aria-label="Language switcher" class="lang-switch"><a class="active" href="software.html" hreflang="en" lang="en"><span aria-hidden="true" class="flag">🇬🇧</span><span>EN</span></a><a href="nl/software.html" hreflang="nl" lang="nl"><span aria-hidden="true" class="flag">🇳🇱</span><span>NL</span></a></div></div>
+</header>
+<main>
+<section class="page-title card page-card">
+<h1>Software &amp; methods</h1>
+<p>
+        I develop numerical methods that turn polarised-light physics into simulations of planetary atmosphere observations. The centrepiece is MONKI: a three-dimensional Monte Carlo radiative-transfer code written in Fortran.
+      </p>
+</section>
+<section class="section method-building-section">
+<div class="section-header">
+<h2>How the methods are built</h2>
+</div>
+<div class="grid two method-building-grid">
+<article class="card">
+<h3>First-principles derivation</h3>
+<p>
+            Deriving the working equations for polarised radiative transfer from the underlying physics, rather than treating the model as a black box.
+          </p>
+</article>
+<article class="card">
+<h3>Numerical implementation</h3>
+<p>
+            Translating the physics into robust Fortran code, including photon-path sampling, scattering events, Stokes-vector bookkeeping, absorption, and statistical convergence.
+          </p>
+</article>
+<article class="card">
+<h3>Benchmarking and validation</h3>
+<p>
+            Comparing model output with established radiative-transfer benchmarks and using discrepancies to improve the method and implementation.
+          </p>
+</article>
+<article class="card">
+<h3>Physical interpretation</h3>
+<p>
+            Using simulations to explain why specific radiance and polarisation features appear in Earth-observation, Venus, and exoplanet signals.
+          </p>
+</article>
+</div>
+</section>
+
+<section class="section">
+<div class="method-panel-list">
+<article class="card method-panel">
+<div class="method-panel-text">
+<p class="date">MONKI · 3D Monte Carlo radiative transfer</p>
+<h2>Three-dimensional radiative transfer for total and polarised light</h2>
+<p>
+              MONKI is the central code development in my work: a three-dimensional Monte Carlo radiative-transfer model for total and polarised radiation reflected and transmitted by planetary atmospheres. I wrote the Fortran code from scratch, including the photon sampling, local-estimation method, polarisation bookkeeping, absorption treatment, and parallel execution needed for large atmospheric simulations.
+            </p>
+<p>
+              The code can be used for horizontally homogeneous atmospheres and for fully three-dimensional scenes, such as cloud fields from atmospheric models. This makes MONKI a bridge between fundamental scattering physics and simulated observations of Earth, Venus, and Earth-like exoplanets.
+            </p>
+<div class="tag-list">
+<span class="tag">Fortran</span>
+<span class="tag">Monte Carlo</span>
+<span class="tag">Polarisation</span>
+<span class="tag">3D clouds</span>
+</div>
+<div class="link-list">
+<a href="https://doi.org/10.5194/egusphere-2025-2197">MONKI paper</a>
+<a href="https://doi.org/10.5281/zenodo.15380811">Zenodo code archive</a>
+</div>
+</div>
+<div class="method-figure-stack">
+<figure class="theme-image">
+<img alt="MONKI simulation of intensity and degree of polarisation for a 3D cloudy atmosphere" src="img/software/monki-simulation.png"/>
+<figcaption>MONKI simulation of intensity and degree of polarisation in a 3D cloudy atmosphere. Figure by Victor J. H. Trees.</figcaption>
+</figure>
+<figure class="theme-image">
+<img alt="Sketch of the 3D MONKI computational domain and photon trajectories" src="img/software/monki.png"/>
+<figcaption>Photon trajectories and local estimation in the MONKI 3D computational domain. Figure adapted from Trees et al. (2025).</figcaption>
+</figure>
+</div>
+</article>
+<article class="card method-panel">
+<div class="method-panel-text">
+<p class="date">DARCLOS · TROPOMI cloud-shadow detection</p>
+<h2>Detecting displaced cloud shadows in satellite observations</h2>
+<p>
+              DARCLOS is a cloud-shadow detection method for TROPOMI. It uses the geometry of the Sun, cloud height, surface location, and satellite viewing direction to estimate where a cloud shadow should appear on the Earth’s surface, even though the cloud itself is observed at a different apparent location by the satellite.
+            </p>
+<p>
+              The resulting cloud-shadow flag helps identify scenes where three-dimensional cloud effects influence measured reflectances and derived atmospheric products. This connects directly to my Earth-observation work on aerosols, surface reflectance, and the physical interpretation of satellite measurements.
+            </p>
+<div class="tag-list">
+<span class="tag">TROPOMI</span>
+<span class="tag">Cloud shadows</span>
+<span class="tag">Geometry</span>
+<span class="tag">Earth observation</span>
+</div>
+<div class="link-list">
+<a href="https://doi.org/10.5194/amt-15-3121-2022">DARCLOS paper</a>
+</div>
+</div>
+<div class="method-figure-stack">
+<figure class="theme-image">
+<img alt="VIIRS true-colour scene and DARCLOS cloud-shadow flag on the TROPOMI grid" src="img/software/darclos-example.png"/>
+<figcaption>VIIRS true colour next to the DARCLOS cloud-shadow flag on the TROPOMI grid. Figure adapted from Trees et al. (2022).</figcaption>
+</figure>
+<figure class="theme-image">
+<img alt="Sketch of the cloud-shadow geometry used in DARCLOS" src="img/software/darclos.png"/>
+<figcaption>Geometry linking the apparent cloud pixel, true cloud position, and displaced shadow. Figure adapted from Trees et al. (2022).</figcaption>
+</figure>
+</div>
+</article>
+<article class="card method-panel">
+<div class="method-panel-text">
+<p class="date">Solar-eclipse correction · Reflectance restoration</p>
+<h2>Restoring satellite reflectances during solar eclipses</h2>
+<p>
+              The solar-eclipse correction method computes how much of the solar disk is blocked by the Moon for each satellite pixel and uses that geometry to restore top-of-atmosphere reflectances. This turns eclipse scenes from problematic observations into usable measurements of the atmosphere inside the Moon’s partial shadow.
+            </p>
+<p>
+              I developed this correction to investigate how reduced sunlight affects measured radiation fields. It later made it possible to study the rapid response of shallow cumulus clouds to solar eclipses, linking radiative transfer, satellite observations, and cloud physics.
+            </p>
+<div class="tag-list">
+<span class="tag">Solar eclipses</span>
+<span class="tag">Reflectance correction</span>
+<span class="tag">TROPOMI</span>
+<span class="tag">Cloud response</span>
+</div>
+<div class="link-list">
+<a href="https://doi.org/10.5194/acp-21-8593-2021">Eclipse-correction paper</a>
+<a href="https://doi.org/10.1038/s43247-024-01213-0">Cloud-response paper</a>
+</div>
+</div>
+<div class="method-figure-stack">
+<figure class="theme-image">
+<img alt="Satellite images during the 2005 solar eclipse before and after correction for reduced sunlight" src="img/software/eclipse-correction-example.png"/>
+<figcaption>Satellite reflectances during the 3 October 2005 solar eclipse before and after correcting for reduced sunlight. Figure by Victor J. H. Trees.</figcaption>
+</figure>
+<figure class="theme-image">
+<img alt="Sketch of the solar and lunar disk geometry used in the eclipse-correction method" src="img/software/eclipse-correction.png"/>
+<figcaption>Solar and lunar disk geometry used to compute eclipse obscuration. Figure adapted from Trees et al. (2021).</figcaption>
+</figure>
+</div>
+</article>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-wrap">
+<span>© <span id="year">2026</span> Victor Trees</span>
+<span><a href="credits.html">Image credits</a></span>
+</div>
+</footer>
+<script src="js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

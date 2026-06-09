@@ -1,0 +1,1146 @@
+/*
+  Victor Trees personal website
+  Simple static HTML/CSS design, suitable for GitHub Pages.
+
+  How to customize quickly:
+  - Change colors in :root.
+  - Replace placeholder text in the HTML files.
+  - Add your photo as img/victor.jpg and uncomment the image in index.html.
+*/
+
+:root {
+  --bg: #06111f;
+  --site-bg-image: url("../img/backgrounds/background.jpg");
+  --surface: rgba(255, 255, 255, 0.92);
+  --surface-strong: rgba(255, 255, 255, 0.96);
+  --surface-soft: rgba(233, 241, 249, 0.9);
+  --text: #182333;
+  --muted: #58697d;
+  --border: #d6e2ef;
+  --accent: #2b6f9f;
+  --accent-dark: #153e63;
+  --accent-soft: #e6f1fa;
+  --shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+  --radius: 18px;
+  --max-width: 1080px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(6, 17, 31, 0.18) 0%,
+      rgba(6, 17, 31, 0.36) 45%,
+      rgba(6, 17, 31, 0.58) 100%
+    ),
+    var(--site-bg-image);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  line-height: 1.65;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.84);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+
+.nav-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  color: var(--text);
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+.brand:hover,
+.brand:focus {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.brand span {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.nav-toggle {
+  display: none;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem;
+  font: inherit;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+}
+
+.nav-links a:hover,
+.nav-links a:focus,
+.nav-links a.active {
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+  text-decoration: none;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.25rem 1.25rem 4rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.55fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: calc(var(--radius) + 10px);
+  box-shadow: var(--shadow);
+}
+
+.hero h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2.2rem, 6vw, 4.3rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+
+.hero .subtitle {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  color: var(--muted);
+  max-width: 64ch;
+}
+
+.hero-photo {
+  aspect-ratio: 1 / 1;
+  background: var(--surface-soft);
+  border: 1px dashed #a8b8c6;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.95rem;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.button-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.35rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.55rem;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  color: #ffffff;
+  background: var(--accent);
+  font-weight: 700;
+}
+
+.button:hover,
+.button:focus {
+  color: #ffffff;
+  background: var(--accent-dark);
+  text-decoration: none;
+}
+
+.button.secondary {
+  color: var(--accent-dark);
+  background: transparent;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
+.section {
+  margin-top: 2.4rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-header h2,
+.page-title h1 {
+  margin: 0;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.page-title {
+  max-width: 780px;
+  margin-bottom: 2rem;
+}
+
+.page-title h1 {
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+}
+
+.page-title p {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card,
+.news-item,
+.paper-card,
+.talk-item,
+.cv-block {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.70);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: 0 14px 36px rgba(6, 17, 31, 0.18);
+  backdrop-filter: blur(10px);
+}
+
+
+.highlight-card {
+  background: linear-gradient(135deg, #123b5d 0%, #2b6f9f 100%);
+  color: #ffffff;
+  border-radius: calc(var(--radius) + 6px);
+  padding: 1.6rem;
+  box-shadow: var(--shadow);
+}
+
+.highlight-card h2 {
+  margin: 0 0 0.7rem;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.highlight-card p {
+  max-width: 78ch;
+}
+
+.highlight-card .date {
+  color: #d9fbff;
+}
+
+.paper-card.featured {
+  border-color: rgba(43, 111, 159, 0.35);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(235, 244, 252, 0.94) 100%);
+}
+
+.card h3,
+.news-item h2,
+.paper-card h2,
+.talk-item h2,
+.cv-block h2 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.card p:last-child,
+.news-item p:last-child,
+.paper-card p:last-child,
+.talk-item p:last-child,
+.cv-block p:last-child {
+  margin-bottom: 0;
+}
+
+.meta,
+.date,
+.authors,
+.journal,
+.location {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.date {
+  margin: 0 0 0.35rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.tag-list,
+.link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.9rem;
+}
+
+.tag,
+.filter-button {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: var(--surface-soft);
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+.link-list a {
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  background: var(--accent-soft);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-button {
+  cursor: pointer;
+  background: var(--surface);
+  color: var(--accent-dark);
+}
+
+.filter-button.active,
+.filter-button:hover,
+.filter-button:focus {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.paper-list,
+.news-list,
+.talk-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.paper-card.hidden {
+  display: none;
+}
+
+.paper-card h2 {
+  font-size: 1.25rem;
+}
+
+.research-theme {
+  display: grid;
+  grid-template-columns: minmax(0, 0.4fr) minmax(0, 0.6fr);
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+  align-items: start;
+}
+
+.research-theme h2 {
+  margin: 0;
+  letter-spacing: -0.035em;
+}
+
+.callout {
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.55fr) minmax(0, 0.45fr);
+  gap: 1rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-list li:last-child {
+  border-bottom: 0;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(12px);
+}
+
+.footer-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 850px) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: 4.75rem;
+    padding: 0.75rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links.open {
+    display: grid;
+  }
+
+  .nav-links a {
+    padding: 0.65rem 0.75rem;
+  }
+
+  .hero,
+  .grid,
+  .grid.two,
+  .research-theme,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 2rem;
+  }
+
+  .hero-photo {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 520px) {
+  main {
+    padding-top: 1.25rem;
+  }
+
+  .hero {
+    padding: 1.35rem;
+  }
+
+  .section-header {
+    align-items: start;
+    flex-direction: column;
+  }
+}
+
+
+/* Full-page photographic background support.
+   Put your chosen background image at:
+   img/backgrounds/background.jpg
+   The content remains readable because all panels use translucent surfaces. */
+.section-header {
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.1rem;
+  box-shadow: 0 10px 26px rgba(6, 17, 31, 0.14);
+  backdrop-filter: blur(10px);
+}
+
+.image-credit {
+  color: var(--muted);
+}
+
+/* Figure-enabled cards for publication and news entries. */
+.page-card {
+  max-width: none;
+  margin-bottom: 1.5rem;
+}
+
+.with-figure {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.34fr);
+  gap: 1.1rem;
+  align-items: stretch;
+}
+
+.paper-content,
+.news-content {
+  min-width: 0;
+}
+
+.entry-figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.figure-placeholder {
+  min-height: 170px;
+  height: 100%;
+  border-radius: calc(var(--radius) - 4px);
+  border: 1px dashed #a8b8c6;
+  background:
+    linear-gradient(135deg, rgba(230, 241, 250, 0.7), rgba(255, 255, 255, 0.85));
+  color: var(--muted);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.entry-figure img {
+  width: 100%;
+  height: 100%;
+  min-height: 170px;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 4px);
+  border: 1px solid var(--border);
+}
+
+.entry-figure figcaption,
+.theme-image figcaption {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.theme-image figcaption {
+  margin-top: 0.45rem;
+}
+
+.paper-summary {
+  margin-top: 0.75rem;
+}
+
+code {
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  padding: 0.05rem 0.3rem;
+}
+
+@media (max-width: 850px) {
+  .with-figure {
+    grid-template-columns: 1fr;
+  }
+
+  .figure-placeholder,
+  .entry-figure img {
+    min-height: 190px;
+  }
+}
+
+@media (max-width: 850px) {
+  body {
+    background-attachment: scroll;
+    background-position: center top;
+  }
+}
+
+/* Research-theme image support. These placeholders can be replaced with real images later. */
+.theme-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.theme-card h3 {
+  margin-top: 0.15rem;
+}
+
+.theme-image {
+  margin: 0 0 0.1rem;
+}
+
+.figure-placeholder.small {
+  min-height: 135px;
+  font-size: 0.88rem;
+}
+
+.theme-image img {
+  width: 100%;
+  min-height: 135px;
+  max-height: 190px;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 4px);
+  border: 1px solid var(--border);
+}
+
+.research-theme.with-theme-image {
+  grid-template-columns: minmax(180px, 0.26fr) minmax(180px, 0.25fr) minmax(0, 0.49fr);
+  align-items: start;
+}
+
+.research-theme.with-theme-image .theme-image {
+  height: 100%;
+}
+
+@media (max-width: 850px) {
+  .research-theme.with-theme-image {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Homepage key-discovery cards: full-width, image-led highlights with media links. */
+.discovery-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.discovery-card.wide-card {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.34fr) minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: stretch;
+}
+
+.discovery-card.wide-card .theme-image {
+  height: 100%;
+}
+
+.discovery-card.wide-card .figure-placeholder,
+.discovery-card.wide-card .theme-image img {
+  min-height: 210px;
+  height: 100%;
+}
+
+.discovery-content {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.discovery-card .date {
+  margin-top: 0.1rem;
+}
+
+.discovery-card h3 {
+  font-size: 1.18rem;
+}
+
+.discovery-card .link-list {
+  margin-top: auto;
+}
+
+@media (max-width: 850px) {
+  .discovery-card.wide-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Homepage key software/method cards. Keep these compact: MONKI is the lead panel,
+   DARCLOS and the eclipse-correction method are supporting methodological outputs. */
+.software-grid .software-card:first-child {
+  border-color: rgba(43, 111, 159, 0.34);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(235, 244, 252, 0.95) 100%);
+}
+
+.software-card h3 {
+  font-size: 1.08rem;
+}
+
+.software-card .tag-list {
+  margin-top: auto;
+}
+
+
+/* Image credits page. The link to this page lives in the footer so the main
+   navigation stays focused on research content. */
+.credit-section {
+  margin-top: 1.5rem;
+}
+
+.credit-grid {
+  align-items: stretch;
+}
+
+.credit-card code {
+  font-size: 0.92rem;
+  color: var(--accent-dark);
+  background: rgba(230, 241, 250, 0.7);
+  padding: 0.08rem 0.25rem;
+  border-radius: 6px;
+}
+
+.footer-wrap a {
+  font-weight: 700;
+}
+
+/* v16: robust image/caption layout.
+   Captions are now part of the normal card flow, so they no longer overlap
+   with headings or spill out of wide discovery cards. */
+.theme-image {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.theme-image figcaption,
+.entry-figure figcaption {
+  display: block;
+  clear: both;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.theme-card .theme-image {
+  margin-bottom: 0.35rem;
+}
+
+.discovery-card.wide-card {
+  align-items: start;
+}
+
+.discovery-card.wide-card .theme-image {
+  height: auto;
+  align-self: start;
+}
+
+.discovery-card.wide-card .figure-placeholder,
+.discovery-card.wide-card .theme-image img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.theme-card .theme-image img,
+.theme-card .figure-placeholder.small {
+  width: 100%;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+
+/* v21: method schematics should be shown in full rather than cropped. */
+.software-card .theme-image img {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 0.35rem;
+}
+
+.diagram-figure img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 0.45rem;
+}
+
+.software-method-grid {
+  align-items: start;
+}
+
+/* v29: publication figures are mostly scientific diagrams/plots; show them in full. */
+.paper-list .paper-figure img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 0.35rem;
+}
+
+
+/* v31: publication context notes. */
+.paper-details {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.paper-details p {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(43, 111, 159, 0.16);
+  border-left: 4px solid rgba(43, 111, 159, 0.45);
+  border-radius: 14px;
+  background: rgba(235, 244, 252, 0.55);
+  color: var(--text);
+}
+
+.paper-details strong {
+  color: var(--accent-dark);
+}
+
+.page-title p + p {
+  margin-top: 0.65rem;
+}
+
+
+/* v32: emphasize first-author journal papers; keep co-authored/preprint entries compact. */
+.paper-card.first-author-journal {
+  grid-template-columns: minmax(0, 0.9fr) minmax(340px, 0.62fr);
+  gap: 1.35rem;
+  padding: 1.45rem;
+  border-color: rgba(43, 111, 159, 0.30);
+}
+
+.paper-card.first-author-journal .paper-figure img {
+  aspect-ratio: 4 / 3;
+  padding: 0.45rem;
+}
+
+.paper-card.first-author-journal h2 {
+  font-size: 1.32rem;
+}
+
+.paper-card.compact-publication .paper-details {
+  display: none;
+}
+
+.paper-card.compact-publication .paper-summary {
+  margin-bottom: 0.85rem;
+}
+
+.paper-card.first-author-journal .paper-details {
+  margin-top: 1.05rem;
+}
+
+.paper-card.first-author-journal .paper-details p {
+  background: rgba(235, 244, 252, 0.72);
+}
+
+@media (max-width: 950px) {
+  .paper-card.first-author-journal {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* v34: use simulation figures on the homepage and pair them with method sketches on Software & methods. */
+.software-grid .software-card .theme-image img {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 0.35rem;
+}
+
+.method-example-list {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.method-example-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+  gap: 1.15rem;
+  align-items: start;
+}
+
+.method-figure-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.method-figure-pair .theme-image img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 0.35rem;
+}
+
+.method-example-card h3 {
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 980px) {
+  .method-example-card,
+  .method-figure-pair {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* v35: Software & methods uses three full-width method panels. */
+.software-grid .software-card .theme-image img {
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 0.3rem;
+}
+
+.method-panel-list {
+  display: grid;
+  gap: 1.35rem;
+}
+
+.method-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(320px, 1.08fr);
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.method-panel h2 {
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
+  margin-bottom: 0.75rem;
+}
+
+.method-panel-text p {
+  max-width: 68rem;
+}
+
+.method-figure-stack {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.method-figure-stack .theme-image img {
+  width: 100%;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 0.35rem;
+}
+
+.method-figure-stack .theme-image figcaption {
+  font-size: 0.78rem;
+}
+
+@media (max-width: 950px) {
+  .method-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* v36: Research page image-led theme sections. */
+.research-theme-list {
+  display: grid;
+  gap: 1.35rem;
+}
+
+.research-feature {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.42fr) minmax(0, 0.58fr);
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.research-feature-image {
+  margin: 0;
+}
+
+.research-feature-image img {
+  width: 100%;
+  min-height: 0;
+  max-height: none;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 4px);
+  border: 1px solid var(--border);
+}
+
+.research-feature-content h2 {
+  margin-top: 0.15rem;
+}
+
+.research-feature-content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 850px) {
+  .research-feature {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Bilingual language switcher */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex: 0 0 auto;
+}
+.lang-switch a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 0.86rem;
+  padding: 0.38rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.68);
+}
+.lang-switch a:hover,
+.lang-switch a:focus,
+.lang-switch a.active {
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+  text-decoration: none;
+}
+.lang-switch .flag {
+  font-size: 1rem;
+  line-height: 1;
+}
+@media (max-width: 850px) {
+  .lang-switch { margin-left: auto; }
+}
+
+
+/* v38: keep the desktop navigation on one line after adding the language switcher. */
+.site-header .nav-wrap {
+  max-width: 1240px;
+  gap: 0.65rem;
+}
+.site-header .nav-links {
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+.site-header .nav-links a,
+.site-header .lang-switch a {
+  white-space: nowrap;
+}
+@media (min-width: 851px) and (max-width: 1120px) {
+  .site-header .nav-wrap { gap: 0.45rem; }
+  .site-header .nav-links a {
+    font-size: 0.86rem;
+    padding: 0.38rem 0.46rem;
+  }
+  .site-header .lang-switch a {
+    font-size: 0.78rem;
+    padding: 0.32rem 0.38rem;
+  }
+  .site-header .brand span {
+    font-size: 0.70rem;
+  }
+}
+@media (min-width: 851px) and (max-width: 980px) {
+  .site-header .brand span { display: none; }
+}
+
+
+/* v39: concise method-building blocks on Software & methods. */
+.method-building-grid .card h3 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-size: clamp(1.1rem, 1.5vw, 1.35rem);
+}
+
+.method-building-grid .card p {
+  margin-bottom: 0;
+}
