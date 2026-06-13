@@ -64,7 +64,6 @@
 </article>
 </div>
 </section>
-
 <section class="section">
 <div class="method-panel-list">
 <article class="card method-panel" id="monki">
@@ -72,17 +71,12 @@
 <p class="date">MONKI · 3D Monte Carlo-stralingstransport</p>
 <h2>Driedimensionaal stralingstransport voor totale en gepolariseerde straling</h2>
 <p>
-              MONKI is de belangrijkste codeontwikkeling in mijn werk: een driedimensionaal Monte Carlo-stralingstransportmodel voor totale en gepolariseerde straling die door planeetatmosferen wordt gereflecteerd en doorgelaten. Ik heb de Fortran-code vanaf nul geschreven, inclusief fotonsampling, de local-estimation-methode, polarisatieboekhouding, absorptiebehandeling en parallelle uitvoering voor grote atmosfeersimulaties.
+              MONKI is de belangrijkste codeontwikkeling in mijn werk: een driedimensionaal Monte Carlo-stralingstransportmodel voor totale en gepolariseerde straling die door planeetatmosferen wordt gereflecteerd en doorgelaten. Ik heb de Fortran-code vanaf nul geschreven, inclusief fotonsampling, de lokale-schattingsmethode, polarisatieboekhouding, absorptiebehandeling en parallelle uitvoering voor grote atmosfeersimulaties.
             </p>
 <p>
               De code kan worden gebruikt voor horizontaal homogene atmosferen en voor volledig driedimensionale scènes, zoals wolkenvelden uit atmosfeermodellen. Daarmee vormt MONKI een brug tussen fundamentele verstrooiingsfysica en gesimuleerde waarnemingen van de Aarde, Venus en aardachtige exoplaneten.
             </p>
-<div class="tag-list">
-<span class="tag">Fortran</span>
-<span class="tag">Monte Carlo</span>
-<span class="tag">Polarisatie</span>
-<span class="tag">3D-wolken</span>
-</div>
+
 <div class="link-list">
 <a href="https://doi.org/10.5194/egusphere-2025-2197">MONKI-paper</a>
 <a href="https://doi.org/10.5281/zenodo.15380811">Zenodo-codearchief</a>
@@ -107,22 +101,17 @@
               DARCLOS is een methode om wolkenschaduwen in TROPOMI-data op te sporen. De methode gebruikt de geometrie van de zon, wolkhoogte, locatie op het oppervlak en satellietkijkrichting om te bepalen waar een wolkenschaduw op het aardoppervlak hoort te liggen, ook al wordt de wolk zelf door de satelliet op een andere schijnbare locatie gezien.
             </p>
 <p>
-              De resulterende wolkenschaduwflag helpt scènes te identificeren waarin driedimensionale wolkeneffecten gemeten reflectanties en afgeleide atmosfeerproducten beïnvloeden. Dit sluit direct aan op mijn aardobservatiewerk aan aerosolen, oppervlaktereflectie en de fysische interpretatie van satellietmetingen.
+              De resulterende wolkenschaduwvlag helpt scènes te identificeren waarin driedimensionale wolkeneffecten gemeten reflectanties en afgeleide atmosfeerproducten beïnvloeden. Dit sluit direct aan op mijn aardobservatiewerk aan aerosolen, oppervlaktereflectie en de fysische interpretatie van satellietmetingen.
             </p>
-<div class="tag-list">
-<span class="tag">TROPOMI</span>
-<span class="tag">Wolkenschaduwen</span>
-<span class="tag">Geometrie</span>
-<span class="tag">Aardobservatie</span>
-</div>
+
 <div class="link-list">
 <a href="https://doi.org/10.5194/amt-15-3121-2022">DARCLOS-paper</a>
 </div>
 </div>
 <div class="method-figure-stack">
 <figure class="theme-image">
-<img alt="VIIRS true-colour scene and DARCLOS cloud-shadow flag on the TROPOMI grid" src="../img/software/darclos-example.png"/>
-<figcaption>VIIRS true-colourbeeld naast de DARCLOS-wolkenschaduwflag op het TROPOMI-grid. Figuur aangepast uit Trees et al. (2022).</figcaption>
+<img alt="VIIRS-warekleurenbeeld en DARCLOS-wolkenschaduwvlag op het TROPOMI-raster" src="../img/software/darclos-example.png"/>
+<figcaption>VIIRS-warekleurenbeeld naast de DARCLOS-wolkenschaduwvlag op het TROPOMI-raster. Figuur aangepast uit Trees et al. (2022).</figcaption>
 </figure>
 <figure class="theme-image">
 <img alt="Sketch of the cloud-shadow geometry used in DARCLOS" src="../img/software/darclos.png"/>
@@ -140,12 +129,7 @@
 <p>
               Ik ontwikkelde deze correctie om te onderzoeken hoe verminderd zonlicht gemeten stralingsvelden beïnvloedt. Later maakte de methode het mogelijk om de snelle reactie van ondiepe cumuluswolken op zonsverduisteringen te bestuderen, en zo stralingstransport, satellietwaarnemingen en wolkenfysica met elkaar te verbinden.
             </p>
-<div class="tag-list">
-<span class="tag">Zonsverduisteringen</span>
-<span class="tag">Reflectantiecorrectie</span>
-<span class="tag">TROPOMI</span>
-<span class="tag">Wolkenrespons</span>
-</div>
+
 <div class="link-list">
 <a href="https://doi.org/10.5194/acp-21-8593-2021">Eclips-correctiepaper</a>
 <a href="https://doi.org/10.1038/s43247-024-01213-0">Wolkenrespons-paper</a>

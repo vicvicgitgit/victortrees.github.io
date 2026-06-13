@@ -1,64 +1,61 @@
-img/backgrounds/background.jpg
+Background image
 Image: Exploring Earth’s Limb (NASA SVS ID 11901)
 Credit: NASA Goddard Space Flight Center; Cover image courtesy of NASA/JSC
 Source: https://svs.gsfc.nasa.gov/11901
 Downloaded file: https://svs.gsfc.nasa.gov/vis/a010000/a011900/a011901/c-1920.jpg
 
-img/victor.jpg
+Portrait photo
 Image: Portrait of Victor J. H. Trees
-Credit: image supplied by Victor J. H. Trees
+Credit: Portrait photo by Denis Trees
 
-img/software/monki.png
+MONKI computational domain
 Image: Sketch of the 3D computational domain of MONKI with photon trajectories and local-estimation directions
-Credit: Figure from Trees et al. (2025), rendered from cropped PDF supplied by Victor J. H. Trees
-Source file in website: img/software/source-pdfs/monki.pdf
+Credit: Figure from Trees et al. (2025), prepared for this website from the published figure
 Source: https://doi.org/10.5194/egusphere-2025-2197
 
-img/software/darclos.png
+DARCLOS cloud-shadow geometry
 Image: Sketch of the cloud-shadow geometry used in the DARCLOS algorithm
-Credit: Figure from Trees et al. (2022), rendered from cropped PDF supplied by Victor J. H. Trees
-Source file in website: img/software/source-pdfs/darclos.pdf
+Credit: Figure from Trees et al. (2022), prepared for this website from the published figure
 Source: https://doi.org/10.5194/amt-15-3121-2022
 
-img/software/eclipse-correction.png
+Eclipse correction geometry
 Image: Sketch of the solar and lunar disk geometry used in the eclipse-correction method
-Credit: Figure from Trees et al. (2021), rendered from cropped PDF supplied by Victor J. H. Trees
-Source file in website: img/software/source-pdfs/eclipse-correction.pdf
+Credit: Figure from Trees et al. (2021), prepared for this website from the published figure
 Source: https://doi.org/10.5194/acp-21-8593-2021
 
-img/themes/exoplanets.jpg
+TRAPPIST-1 planetary system
 Image: Artist’s impression of the TRAPPIST-1 planetary system
 Credit: ESO/M. Kornmesser
 Source: https://www.eso.org/public/images/eso1805a/
 
-img/discoveries/ocean-exoplanets.png
+Ocean-covered exoplanet render
 Image: Illustrative render of an ocean-covered exoplanet with cloud cover and visible ocean glint
 Credit: Image generated with SpaceEngine / Cosmographic Software LLC; screenshot by Victor J. H. Trees
 Source: SpaceEngine screenshot created by Victor J. H. Trees
 Notes: Used as an illustrative visual for the ocean-detection research-highlight card, not as a scientific result figure
 
-img/discoveries/eclipse-clouds.jpg
+Solar eclipse photograph
 Image: A total solar eclipse viewed from the northern tip of Australia on 13 November 2012 at 3:35 EST. The halo around the Moon is the Sun’s corona.
 Credit: Courtesy of Romeo Durscher
 Source: https://svs.gsfc.nasa.gov/11133/
 
 
-img/software/monki-simulation.png
+MONKI simulation
 Image: MONKI simulation of intensity and degree of polarisation for a 3D cloudy atmosphere
 Credit: Figure by Victor J. H. Trees
-Source: MONKI simulation figure supplied by Victor J. H. Trees
+Source: MONKI simulation figure prepared for this website
 
-img/software/darclos-example.png
+DARCLOS cloud-shadow example
 Image: VIIRS true-colour image and DARCLOS actual cloud-shadow flag on the TROPOMI grid
 Credit: Figure adapted from Trees et al. (2022)
 Source: https://doi.org/10.5194/amt-15-3121-2022
 
-img/software/eclipse-correction-example.png
+Eclipse correction example
 Image: Satellite reflectances during the 3 October 2005 solar eclipse, before and after correction for reduced sunlight
 Credit: Figure by Victor J. H. Trees
-Source: Solar-eclipse reflectance restoration figure supplied by Victor J. H. Trees
+Source: Solar-eclipse reflectance restoration figure prepared for this website
 
-img/themes/earth_observation.jpg
+Earth observation image
 Image: Copernicus Sentinel-5P, Europe’s air-quality monitoring mission, observing Earth
 Credit: ESA/ATG medialab
 Source: https://www.esa.int/Enabling_Support/Operations/Sentinel-5P_operations
@@ -66,76 +63,76 @@ Image credit/licence information: https://www.esa.int/ESA_Multimedia/Images/2017
 Licence: ESA Standard Licence
 Used for: Earth observation research theme card
 
-img/themes/venus.jpg
+Venus image
 Image: Venus as seen by NASA's Mariner 10 spacecraft as it sped away from Venus in February 1974
 Credit: NASA/JPL-Caltech
 Source: https://science.nasa.gov/venus/venus-facts/
 Used for: Venus research theme card
 
-img/papers/monki-microhh-clouds.png
+MONKI and MicroHH cloud-field simulations
 Image: MONKI simulations using MicroHH cloud fields at different horizontal resolutions
 Credit: Figure adapted from Wiltink et al. (2026)
 Source: https://doi.org/10.5194/acp-26-7207-2026
 Licence: Creative Commons Attribution 4.0 License
 
-img/papers/aai-cloud-shadows.png
+Cloud-shadow effects in the absorbing aerosol index
 Image: Conceptual illustration of cancellation of cloud-shadow effects in the TROPOMI absorbing aerosol index
 Credit: Figure adapted from Trees et al. (2025)
 Source: https://doi.org/10.5194/amt-18-73-2025
 
-img/papers/eclipse-clouds.png
+Solar-eclipse cloud response
 Image: Conceptual model of surface cooling and shallow-cumulus response during a solar eclipse
 Credit: Figure adapted from Trees et al. (2024)
 Source: https://doi.org/10.1038/s43247-024-01213-0
 
-img/papers/surface-reflectance.jpg
+TROPOMI surface-reflectance climatology
 Image: Seasonal maps from the TROPOMI directional surface-reflectance climatology
 Credit: Figure adapted from Tilstra et al. (2024)
 Source: https://doi.org/10.5194/amt-17-2235-2024
 
-img/papers/clouds-aai.png
+Cloud effects on the absorbing aerosol index
 Image: TROPOMI aerosol index, cloud imagery, and UV reflectance fields illustrating cloud effects on the absorbing aerosol index
 Credit: Figure adapted from Kooreman et al. (2020)
 Source: https://doi.org/10.5194/amt-13-6407-2020
 
-img/papers/venus-envision.jpg
+Venus spectropolarimetry for EnVision
 Image: Artist impression of ESA's EnVision mission at Venus
 Credit: ESA/Paris Observatory/VR2Planets & NASA/JPL-Caltech
 Source: https://www.esa.int/ESA_Multimedia/Images/2025/01/Envision_at_Venus
 Licence: ESA Standard Licence
 
-img/papers/hwo-ocean-glint.jpg
+NASA's Habitable Worlds Observatory concept study
 Image: Reflected-light features relevant to NASA's Habitable Worlds Observatory, including rainbows, Rayleigh scattering, and ocean glint
 Credit: Figure adapted from Vaughan et al. (2023)
 Source: https://doi.org/10.1093/mnras/stad2127
 
-img/papers/ocean-signatures.png
+Ocean signatures in exoplanet spectra
 Image: Total flux and degree of polarisation spectra for Earth-like exoplanets with and without ocean glint
 Credit: Figure adapted from Trees & Stam (2022)
 Source: https://doi.org/10.1051/0004-6361/202243926
 
-img/papers/earth-colors.jpg
+Temporal colours of Earth as an exoplanet
 Image: Earth as an unresolved exoplanet: total flux and polarised flux at different phase angles
 Credit: Figure adapted from Groot et al. (2020)
 Source: https://doi.org/10.1051/0004-6361/202038035
 
-img/papers/ocean-planets.png
+Blue, white, and red ocean planets
 Image: Degree of polarisation of reflected starlight for ocean and dry planets
 Credit: Figure adapted from Trees & Stam (2019)
 Source: https://doi.org/10.1051/0004-6361/201935330
 
-img/software/polarisation-intro-slide.png - Introductory diagram by Victor J. H. Trees; includes a PACE observatory visual (Credit: NASA/PACE) from https://pace.oceansciences.org/mission.htm and an Earth background created by Victor J. H. Trees in SpaceEngine.
-img/software/harp2-cloudbow.png - HARP2 first-light image over South America. Credit: UMBC / HARP2 team, used with permission. Source story: https://umbc.edu/stories/first-light-from-harp2-on-pace/ ; image file: https://esi.umbc.edu/wp-content/uploads/sites/544/2024/04/HARP2-South-America-Cloudbow.png
-img/software/polarisation-books.jpg - Cover images of Hovenier et al., Transfer of Polarized Light in Planetary Atmospheres, and H. C. van de Hulst, Light Scattering by Small Particles; used as contextual reference image.
+Polarisation introduction diagram: Introductory diagram by Victor J. H. Trees; includes a PACE observatory visual (Credit: NASA/PACE) from https://pace.oceansciences.org/mission.htm and an Earth background created by Victor J. H. Trees in SpaceEngine.
+HARP2 polarisation image: HARP2 first-light image over South America. Credit: UMBC / HARP2 team, used with permission. Source story: https://umbc.edu/stories/first-light-from-harp2-on-pace/ ; image file: https://esi.umbc.edu/wp-content/uploads/sites/544/2024/04/HARP2-South-America-Cloudbow.png
+Classic light-scattering references: Cover images of Hovenier et al., Transfer of Polarized Light in Planetary Atmospheres, and H. C. van de Hulst, Light Scattering by Small Particles; used as contextual reference image.
 
 
-img/news/lorentzworkshop.jpg
+Lorentz Center Venus workshop photograph
 Image: Poster for the Lorentz Center workshop Roadmap to the Exploration of Venus Habitability
 Credit: Lorentz Center
 Source: https://www.lorentzcenter.nl/roadmap-to-the-exploration-of-venus-habitability.html
 Used for: News item about the Venus habitability workshop
 
-img/stories/rainbow-formation-alamy-wide.png
+Rainbow formation diagram
 Image: Adapted rainbow-formation diagram in spherical water droplets
 Credit: Universal Images Group North America LLC / Alamy Stock Photo. Image ID: BCE761
 Source: Alamy licensed image, "A rainbow forms when sunlight is refracted by spherical water droplets in the atmosphere, producing the primary arcs of colour"
