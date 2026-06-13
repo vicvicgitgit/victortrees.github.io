@@ -35,7 +35,7 @@ img/discoveries/ocean-exoplanets.png
 Image: Illustrative render of an ocean-covered exoplanet with cloud cover and visible ocean glint
 Credit: Image generated with SpaceEngine / Cosmographic Software LLC; screenshot by Victor J. H. Trees
 Source: SpaceEngine screenshot created by Victor J. H. Trees
-Notes: Used as an illustrative visual for the ocean-detection key discovery card, not as a scientific result figure
+Notes: Used as an illustrative visual for the ocean-detection research-highlight card, not as a scientific result figure
 
 img/discoveries/eclipse-clouds.jpg
 Image: A total solar eclipse viewed from the northern tip of Australia on 13 November 2012 at 3:35 EST. The halo around the Moon is the Sun’s corona.
@@ -105,7 +105,7 @@ Source: https://www.esa.int/ESA_Multimedia/Images/2025/01/Envision_at_Venus
 Licence: ESA Standard Licence
 
 img/papers/hwo-ocean-glint.jpg
-Image: Reflected-light features relevant to the Habitable Worlds Observatory, including rainbows, Rayleigh scattering, and ocean glint
+Image: Reflected-light features relevant to NASA's Habitable Worlds Observatory, including rainbows, Rayleigh scattering, and ocean glint
 Credit: Figure adapted from Vaughan et al. (2023)
 Source: https://doi.org/10.1093/mnras/stad2127
 
@@ -123,3 +123,21 @@ img/papers/ocean-planets.png
 Image: Degree of polarisation of reflected starlight for ocean and dry planets
 Credit: Figure adapted from Trees & Stam (2019)
 Source: https://doi.org/10.1051/0004-6361/201935330
+
+img/software/polarisation-intro-slide.png - Introductory diagram by Victor J. H. Trees; includes a PACE observatory visual (Credit: NASA/PACE) from https://pace.oceansciences.org/mission.htm and an Earth background created by Victor J. H. Trees in SpaceEngine.
+img/software/harp2-cloudbow.png - HARP2 first-light image over South America. Credit: UMBC / HARP2 team, used with permission. Source story: https://umbc.edu/stories/first-light-from-harp2-on-pace/ ; image file: https://esi.umbc.edu/wp-content/uploads/sites/544/2024/04/HARP2-South-America-Cloudbow.png
+img/software/polarisation-books.jpg - Cover images of Hovenier et al., Transfer of Polarized Light in Planetary Atmospheres, and H. C. van de Hulst, Light Scattering by Small Particles; used as contextual reference image.
+
+
+img/news/lorentzworkshop.jpg
+Image: Poster for the Lorentz Center workshop Roadmap to the Exploration of Venus Habitability
+Credit: Lorentz Center
+Source: https://www.lorentzcenter.nl/roadmap-to-the-exploration-of-venus-habitability.html
+Used for: News item about the Venus habitability workshop
+
+img/stories/rainbow-formation-alamy-wide.png
+Image: Adapted rainbow-formation diagram in spherical water droplets
+Credit: Universal Images Group North America LLC / Alamy Stock Photo. Image ID: BCE761
+Source: Alamy licensed image, "A rainbow forms when sunlight is refracted by spherical water droplets in the atmosphere, producing the primary arcs of colour"
+Licence: Adapted and used under license from Alamy
+Used for: Story page “Are there rainbows on other planets?” / “Zijn er regenbogen op andere planeten?”

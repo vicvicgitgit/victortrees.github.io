@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="MONKI and numerical methods developed by Victor Trees for polarised radiative transfer in planetary atmospheres." name="description"/>
-<title>Software &amp; methods | Victor Trees</title>
+<title>Software and methods | Victor Trees</title>
 <link href="css/style.css" rel="stylesheet"/>
 <link href="software.html" hreflang="en" rel="alternate"/><link href="nl/software.html" hreflang="nl" rel="alternate"/></head>
 <body>
@@ -19,6 +19,7 @@
 <a class="active" href="software.html">Software</a>
 <a href="publications.html">Publications</a>
 <a href="news.html">News</a>
+<a href="stories.html">Stories</a>
 <a href="talks.html">Talks</a>
 <a href="cv.html">CV</a>
 <a href="contact.html">Contact</a>
@@ -27,7 +28,7 @@
 </header>
 <main>
 <section class="page-title card page-card">
-<h1>Software &amp; methods</h1>
+<h1>Software and methods</h1>
 <p>
         I develop numerical methods that turn polarised-light physics into simulations of planetary atmosphere observations. The centrepiece is MONKI: a three-dimensional Monte Carlo radiative-transfer code written in Fortran.
       </p>
@@ -66,7 +67,7 @@
 
 <section class="section">
 <div class="method-panel-list">
-<article class="card method-panel">
+<article class="card method-panel" id="monki">
 <div class="method-panel-text">
 <p class="date">MONKI · 3D Monte Carlo radiative transfer</p>
 <h2>Three-dimensional radiative transfer for total and polarised light</h2>
@@ -98,7 +99,7 @@
 </figure>
 </div>
 </article>
-<article class="card method-panel">
+<article class="card method-panel" id="darclos">
 <div class="method-panel-text">
 <p class="date">DARCLOS · TROPOMI cloud-shadow detection</p>
 <h2>Detecting displaced cloud shadows in satellite observations</h2>
@@ -129,12 +130,12 @@
 </figure>
 </div>
 </article>
-<article class="card method-panel">
+<article class="card method-panel" id="eclipse-correction">
 <div class="method-panel-text">
 <p class="date">Solar-eclipse correction · Reflectance restoration</p>
-<h2>Restoring satellite reflectances during solar eclipses</h2>
+<h2>Restoring satellite measurements during solar eclipses</h2>
 <p>
-              The solar-eclipse correction method computes how much of the solar disk is blocked by the Moon for each satellite pixel and uses that geometry to restore top-of-atmosphere reflectances. This turns eclipse scenes from problematic observations into usable measurements of the atmosphere inside the Moon’s partial shadow.
+              The solar-eclipse correction method computes how much of the solar disk is blocked by the Moon for each satellite pixel and uses that geometry to recover satellite measurements. This turns eclipse scenes from problematic observations into usable measurements of the atmosphere inside the Moon’s partial shadow.
             </p>
 <p>
               I developed this correction to investigate how reduced sunlight affects measured radiation fields. It later made it possible to study the rapid response of shallow cumulus clouds to solar eclipses, linking radiative transfer, satellite observations, and cloud physics.
@@ -153,7 +154,7 @@
 <div class="method-figure-stack">
 <figure class="theme-image">
 <img alt="Satellite images during the 2005 solar eclipse before and after correction for reduced sunlight" src="img/software/eclipse-correction-example.png"/>
-<figcaption>Satellite reflectances during the 3 October 2005 solar eclipse before and after correcting for reduced sunlight. Figure by Victor J. H. Trees.</figcaption>
+<figcaption>Satellite measurements during the 3 October 2005 solar eclipse before and after correcting for reduced sunlight. Figure by Victor J. H. Trees.</figcaption>
 </figure>
 <figure class="theme-image">
 <img alt="Sketch of the solar and lunar disk geometry used in the eclipse-correction method" src="img/software/eclipse-correction.png"/>

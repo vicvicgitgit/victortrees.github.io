@@ -4,15 +4,16 @@ This is a static HTML/CSS website. It is intentionally simple: each page is a se
 
 ## Structure
 
-- `index.html` — homepage with hero, core expertise, research themes, key discoveries, featured MONKI block, and recent news.
-- `research.html` — research overview organised around three application themes: Earth observation, Venus, and Earth-like exoplanets, with polarised radiative transfer as the methodological foundation.
-- `software.html` — MONKI and numerical methods.
-- `publications.html` — publication cards with filters, a short summary, and one figure placeholder per paper.
-- `news.html` — news cards with one figure placeholder per news item.
-- `talks.html` — selected talks and public lectures.
-- `cv.html` — short web CV.
-- `contact.html` — contact details and profile links.
-- `credits.html` — image credits and source tracking for background images, theme images, news thumbnails, and publication figures.
+- `index.html` - homepage with hero, core expertise, research themes, research highlights, featured MONKI block, and recent news.
+- `research.html` - research overview organised around three application themes: Earth observation, Venus, and Earth-like exoplanets, with polarised radiative transfer as the methodological foundation.
+- `software.html` - MONKI and numerical methods.
+- `publications.html` - publication cards with filters, a short summary, and one figure placeholder per paper.
+- `news.html
+stories.html` - news cards with one figure placeholder per news item.
+- `talks.html` - selected talks and public lectures.
+- `cv.html` - short web CV.
+- `contact.html` - contact details and profile links.
+- `credits.html` - image credits and source tracking for background images, theme images, news thumbnails, and publication figures.
 
 ## Adding a figure to a publication
 
@@ -42,9 +43,9 @@ Use the same approach, but put images in `img/news/`.
 
 
 
-## Adding an image to a key discovery
+## Adding an image to a research highlight
 
-Homepage key-discovery images belong in `img/discoveries/`, for example:
+Homepage research-highlight images belong in `img/discoveries/`, for example:
 
 ```text
 img/discoveries/eclipse-clouds.jpg
@@ -93,7 +94,7 @@ The footer of each page links to `credits.html`. This keeps the website visually
 
 ## Homepage solar-eclipse media links
 
-The solar-eclipse clouds key-discovery card contains buttons for major media and institutional coverage, including CNN, The New York Times, NRC, BBC Sky at Night, KNMI, TU Delft, AGU Eos, USA Today, and Forbes. Edit these directly in `index.html`.
+The solar-eclipse clouds research-highlight card contains buttons for major media and institutional coverage, including CNN, The New York Times, NRC, BBC Sky at Night, KNMI, TU Delft, AGU Eos, USA Today, and Forbes. Edit these directly in `index.html`.
 
 ## Local preview
 
@@ -137,7 +138,7 @@ img/backgrounds/background.jpg
 
 ## Homepage discovery cards
 
-The homepage `Key discoveries` section uses full-width cards. Replace the placeholder images in `img/discoveries/` and edit the media/news links directly in `index.html`.
+The homepage `Research highlights` section uses full-width cards. Replace the placeholder images in `img/discoveries/` and edit the media/news links directly in `index.html`.
 
 ## Adding the ESO/M. Kornmesser exoplanet image
 
@@ -153,13 +154,13 @@ Do not hotlink the Delft Planetary URL. The public credit is already prepared in
 Artist's impression of the TRAPPIST-1 planetary system. Credit: ESO/M. Kornmesser.
 ```
 
-If you also want to use the same image in the ocean-detection key discovery card, save a copy as:
+If you also want to use the same image in the ocean-detection research highlight card, save a copy as:
 
 ```text
 img/discoveries/ocean-exoplanets.jpg
 ```
 
-Alternatively, use one of your own Trees & Stam ocean-polarisation figures for the key discovery card and keep the ESO image only as the general exoplanets theme image.
+Alternatively, use one of your own Trees & Stam ocean-polarisation figures for the research highlight card and keep the ESO image only as the general exoplanets theme image.
 
 
 
@@ -198,3 +199,7 @@ The figures in `img/software/` are web-ready PNG renders made from the cropped P
 ## v31 publication context workflow
 
 The publication page is now written as a selected-publications page with short context notes. Use the `paper-summary` paragraph for the one-line result, and the `paper-details` block for two short notes: what the figure shows and why the result matters. Longer narrative pieces should live on the News & stories page rather than in the main navigation.
+
+
+Additional story pages added:
+- `story-rainbows-planets.html` / `nl/story-rainbows-planets.html` — Quest reader question about rainbows on other planets.

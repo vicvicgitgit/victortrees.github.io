@@ -4,8 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="News, media, stories, publications, software, talks, conferences, and outreach from Victor Trees." name="description"/>
-<title>News &amp; stories | Victor Trees</title>
+<meta content="News, publications, software, talks, conferences, and workshops from Victor Trees." name="description"/>
+<title>News | Victor Trees</title>
 <link href="css/style.css" rel="stylesheet"/>
 <link href="news.html" hreflang="en" rel="alternate"/><link href="nl/news.html" hreflang="nl" rel="alternate"/></head>
 <body>
@@ -19,6 +19,7 @@
 <a href="software.html">Software</a>
 <a href="publications.html">Publications</a>
 <a class="active" href="news.html">News</a>
+<a href="stories.html">Stories</a>
 <a href="talks.html">Talks</a>
 <a href="cv.html">CV</a>
 <a href="contact.html">Contact</a>
@@ -27,76 +28,56 @@
 </header>
 <main>
 <section class="page-title card page-card">
-<h1>News &amp; stories</h1>
-<p>Selected updates on publications, software, talks, conferences, media coverage, and outreach. This page is also the place for longer, more personal science stories, such as observing Earth as an exoplanet or explaining rainbows and ocean glints on other worlds.</p>
+<h1>News</h1>
+<p>Selected updates on publications, software, talks, conferences, and workshops. Older media coverage is collected with the relevant publications.</p>
 </section>
 <section class="news-list">
 <article class="news-item with-figure">
 <div class="news-content">
+<p class="date">27 May 2026</p>
+<h2>MONKI used at KNMI to study 3D cloud effects in weather satellite measurements</h2>
+
+<p>MONKI was used in a study led by Job Wiltink to quantify how three-dimensional cloud-radiation interactions affect satellite-based estimates of global horizontal irradiance: the amount of sunlight that reaches the surface on a horizontal plane.</p><p>Such 3D effects are often hidden within large satellite pixels. Light can be transported horizontally between cloudy and cloud-free parts of a scene, and cloud shadows can reduce the radiation that reaches the surface. As new geostationary weather satellites observe clouds with smaller pixels, these effects become increasingly important for interpreting and correcting satellite-based irradiance products.</p><p>The study combines MONKI with realistic cloud fields from the MicroHH large-eddy simulation model and shows how pixel size, cloud structure, and horizontal photon transport shape the retrieved signal.</p><div class="link-list"><a href="https://doi.org/10.5194/acp-26-7207-2026">Read the paper</a></div>
+</div>
+<figure class="entry-figure contain-figure">
+<img alt="MONKI simulations using MicroHH cloud fields at different horizontal resolutions" src="img/papers/monki-microhh-clouds.png"/>
+<figcaption>MONKI simulations using MicroHH cloud fields at different horizontal resolutions. Figure adapted from Wiltink et al. (2026).</figcaption>
+</figure>
+</article>
+<article class="news-item with-figure">
+<div class="news-content">
+<p class="date">9–13 February 2026</p>
+<h2>Venus habitability workshop at the Lorentz Center</h2>
+
+<p>I spent the full week at the Lorentz Center in Leiden for the workshop “Roadmap to the Exploration of Venus Habitability”. The meeting brought together researchers working on Venus geology, interior structure, atmospheric evolution, and future mission concepts.</p><p>We discussed which observations and mission strategies are needed to understand how Venus evolved and whether it may once have been habitable. I contributed from the perspective of reflected-light modelling and argued for polarimetry as a way to constrain Venus’s clouds, hazes, and atmospheric structure.</p><div class="link-list"><a href="https://www.lorentzcenter.nl/roadmap-to-the-exploration-of-venus-habitability.html">Workshop page</a></div>
+</div>
+<figure class="entry-figure">
+<img alt="Poster for the Lorentz Center workshop Roadmap to the Exploration of Venus Habitability" src="img/news/lorentzworkshop.jpg"/>
+<figcaption>Poster for the Lorentz Center workshop Roadmap to the Exploration of Venus Habitability. Credit: Lorentz Center.</figcaption>
+</figure>
+</article>
+<article class="news-item with-figure">
+<div class="news-content">
 <p class="date">14 July 2025</p>
 <h2>MONKI preprint published in EGUsphere</h2>
-<p>
-            The preprint “MONKI: a three-dimensional Monte Carlo simulator of total and polarised radiation reflected by planetary atmospheres” is available on EGUsphere. The paper presents the physical and numerical basis of the code and its validation.
-          </p>
-<div class="link-list"><a href="https://doi.org/10.5194/egusphere-2025-2197">Read the preprint</a><a href="https://doi.org/10.5281/zenodo.15380811">Model code/software</a></div>
+
+<p>The MONKI preprint is available on EGUsphere. The paper presents MONKI from the radiative-transfer equations to the numerical implementation, including polarisation-dependent sampling, forward and backward Monte Carlo modes, and validation against established benchmark models.</p><p>MONKI computes total and polarised radiation reflected by planetary atmospheres and can handle both horizontally homogeneous scenes and three-dimensional cloudy atmospheres. The paper also includes sample simulations for Earth and Venus, showing how the altitude of photon scattering helps explain features in the total and polarised reflected-light signals.</p><div class="link-list"><a href="https://doi.org/10.5194/egusphere-2025-2197">Read the preprint</a><a href="https://doi.org/10.5281/zenodo.15380811">Model code/software</a></div>
 </div>
-<figure class="entry-figure">
-<div class="figure-placeholder">Add figure<br/>img/news/monki-preprint.jpg</div>
-<figcaption>Suggested: MONKI validation plot, geometry, or photon-path visualisation.</figcaption>
+<figure class="entry-figure contain-figure">
+<img alt="MONKI simulation of intensity and degree of polarisation for a 3D cloudy atmosphere" src="img/software/monki-simulation.png"/>
+<figcaption>MONKI simulation of intensity and degree of polarisation in a 3D cloudy atmosphere. Figure by Victor J. H. Trees.</figcaption>
 </figure>
 </article>
 <article class="news-item with-figure">
 <div class="news-content">
-<p class="date">2025 · EGU Vienna</p>
-<h2>Modelling Venus's spectropolarimetric signatures for EnVision</h2>
-<p>
-            I presented work on adapting MONKI for Venus reflected-light simulations relevant to ESA's EnVision mission and the VenSpec instruments. This is part of my current postdoctoral work on Venus in total flux and polarisation.
-          </p>
+<p class="date">30 April 2025</p>
+<h2>Modelling Venus’s spectropolarimetric signatures for EnVision</h2>
+
+<p>I presented MONKI simulations of Venus reflected-light spectra and polarisation at the EGU General Assembly in Vienna. The simulations support the interpretation of future VenSpec-U and VenSpec-H measurements by ESA’s EnVision mission.</p><p>The results show how Venus’s clouds, hazes, gaseous absorption, Rayleigh scattering, and viewing geometry shape the measured fluxes and polarisation. This work is part of adapting MONKI for Venus, including challenging twilight and limb geometries that are relevant for future mission observations.</p><div class="link-list"><a href="https://doi.org/10.5194/egusphere-egu25-17483">EGU abstract</a></div>
 </div>
 <figure class="entry-figure">
-<div class="figure-placeholder">Add figure<br/>img/news/egu-venus.jpg</div>
-<figcaption>Suggested: conference slide, Venus geometry, or simulated Venus spectrum.</figcaption>
-</figure>
-</article>
-<article class="news-item with-figure">
-<div class="news-content">
-<p class="date">2024 · Communications Earth &amp; Environment</p>
-<h2>Solar eclipse cloud paper published</h2>
-<p>
-            We showed that shallow cumulus clouds can dissipate quickly during solar eclipses as the land surface cools. The study used restored satellite observations to turn eclipses into natural experiments for cloud response.
-          </p>
-<div class="link-list"><a href="https://doi.org/10.1038/s43247-024-01213-0">Read the paper</a></div>
-</div>
-<figure class="entry-figure">
-<div class="figure-placeholder">Add figure<br/>img/news/eclipse-clouds.jpg</div>
-<figcaption>Suggested: cloud fraction map, eclipse track, or before/after cloud field.</figcaption>
-</figure>
-</article>
-<article class="news-item with-figure">
-<div class="news-content">
-<p class="date">2024 · SETI Institute</p>
-<h2>Interview on how solar eclipses affect clouds</h2>
-<p>
-            I discussed the solar-eclipse cloud study and why temporary changes in sunlight can reveal how low clouds respond to surface cooling.
-          </p>
-<div class="link-list"><a href="https://www.youtube.com/watch?v=wWf9aI9E1TM">Watch the interview</a></div>
-</div>
-<figure class="entry-figure">
-<div class="figure-placeholder">Add figure<br/>img/news/seti-interview.jpg</div>
-<figcaption>Suggested: video thumbnail or a still from the interview.</figcaption>
-</figure>
-</article>
-<article class="news-item with-figure">
-<div class="news-content">
-<p class="date">2022 · Public lecture</p>
-<h2>Searching for oceans on exoplanets</h2>
-<p>
-            I gave a public astronomy lecture on how reflected light and polarisation can help reveal liquid-water oceans on planets around other stars.
-          </p>
-</div>
-<figure class="entry-figure">
-<div class="figure-placeholder">Add figure<br/>img/news/exoplanet-oceans.jpg</div>
-<figcaption>Suggested: ocean-glint schematic or simulated polarization color plot.</figcaption>
+<img alt="Artist impression of ESA's EnVision mission at Venus" src="img/papers/venus-envision.jpg"/>
+<figcaption>Artist impression of ESA’s EnVision mission at Venus. Credit: ESA/Paris Observatory/VR2Planets &amp; NASA/JPL-Caltech.</figcaption>
 </figure>
 </article>
 </section>

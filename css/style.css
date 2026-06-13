@@ -689,7 +689,7 @@ code {
   }
 }
 
-/* Homepage key-discovery cards: full-width, image-led highlights with media links. */
+/* Homepage research-highlight cards: full-width, image-led highlights with media links. */
 .discovery-list {
   display: grid;
   gap: 1rem;
@@ -1144,3 +1144,132 @@ code {
 .method-building-grid .card p {
   margin-bottom: 0;
 }
+
+
+/* v40: make the polarised-radiative-transfer foundation block easier to scan. */
+.research-feature-media {
+  display: grid;
+  gap: 0.9rem;
+  align-self: start;
+}
+.research-subsection {
+  margin-top: 0.95rem;
+}
+.research-subsection h3,
+.research-history-callout h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.03rem;
+  letter-spacing: -0.015em;
+  color: var(--accent-dark);
+}
+.research-subsection p {
+  margin-top: 0;
+}
+.research-history-callout {
+  margin: 1.05rem 0 1rem;
+}
+.research-history-callout p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* v9: let research-side figures show their full content in the polarised-radiative-transfer block. */
+.research-feature-media .research-feature-image img {
+  aspect-ratio: auto;
+  height: auto;
+  max-height: 360px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.72);
+}
+.research-feature-media .research-feature-image figcaption {
+  max-width: 62ch;
+}
+
+
+/* v40: scientific news figures should be shown in full instead of cropped. */
+.entry-figure.contain-figure {
+  align-self: start;
+}
+
+.entry-figure.contain-figure img {
+  height: auto;
+  min-height: 0;
+  max-height: 420px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 0.35rem;
+}
+
+.story-card h2 {
+  margin-top: 0;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.story-teaser .button-row {
+  margin-top: 1rem;
+}
+
+
+/* v42: story article pages. */
+.story-article-header .button-row {
+  margin-top: 1rem;
+}
+
+.story-article {
+  max-width: 900px;
+  margin: 1.2rem auto 0;
+}
+
+.story-article h2 {
+  margin-top: 1.6rem;
+  margin-bottom: 0.45rem;
+  letter-spacing: -0.02em;
+  color: var(--accent-dark);
+}
+
+.story-article h2:first-child {
+  margin-top: 0;
+}
+
+.story-card .button-row {
+  margin-top: 1rem;
+}
+
+.story-card h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.story-card h2 a:hover,
+.story-card h2 a:focus {
+  color: var(--accent);
+}
+
+/* Story figures. */
+.story-figure {
+  margin: 1.2rem auto 1.4rem;
+  max-width: 680px;
+}
+
+.story-figure-wide {
+  max-width: 920px;
+}
+
+.story-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: calc(var(--radius) - 4px);
+  border: 1px solid var(--border);
+  box-shadow: 0 14px 32px rgba(6, 17, 31, 0.12);
+  background: #f6f8fb;
+}
+
+.story-figure figcaption {
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+

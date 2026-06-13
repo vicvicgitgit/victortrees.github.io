@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="MONKI en numerieke methoden ontwikkeld door Victor Trees voor gepolariseerd stralingstransport in planeetatmosferen." name="description"/>
-<title>Software &amp; methoden | Victor Trees</title>
+<title>Software en methoden | Victor Trees</title>
 <link href="../css/style.css" rel="stylesheet"/>
 <link href="../software.html" hreflang="en" rel="alternate"/><link href="software.html" hreflang="nl" rel="alternate"/></head>
 <body>
@@ -19,6 +19,7 @@
 <a class="active" href="software.html">Software</a>
 <a href="publications.html">Publicaties</a>
 <a href="news.html">Nieuws</a>
+<a href="stories.html">Verhalen</a>
 <a href="talks.html">Lezingen</a>
 <a href="cv.html">CV</a>
 <a href="contact.html">Contact</a>
@@ -27,7 +28,7 @@
 </header>
 <main>
 <section class="page-title card page-card">
-<h1>Software &amp; methoden</h1>
+<h1>Software en methoden</h1>
 <p>
         Ik ontwikkel numerieke methoden die de fysica van gepolariseerd licht vertalen naar simulaties van waarnemingen van planeetatmosferen. De centrale code is MONKI: een driedimensionale Monte Carlo-stralingstransportcode geschreven in Fortran.
       </p>
@@ -58,7 +59,7 @@
 <article class="card">
 <h3>Fysische interpretatie</h3>
 <p>
-            Simulaties gebruiken om te verklaren waarom specifieke radiantie- en polarisatiesignaturen ontstaan in aardobservatie, Venus- en exoplaneetwaarnemingen.
+            Simulaties gebruiken om te verklaren waarom specifieke radiantie- en polarisatiesignalen ontstaan in aardobservatie, Venus- en exoplaneetwaarnemingen.
           </p>
 </article>
 </div>
@@ -66,7 +67,7 @@
 
 <section class="section">
 <div class="method-panel-list">
-<article class="card method-panel">
+<article class="card method-panel" id="monki">
 <div class="method-panel-text">
 <p class="date">MONKI · 3D Monte Carlo-stralingstransport</p>
 <h2>Driedimensionaal stralingstransport voor totale en gepolariseerde straling</h2>
@@ -98,12 +99,12 @@
 </figure>
 </div>
 </article>
-<article class="card method-panel">
+<article class="card method-panel" id="darclos">
 <div class="method-panel-text">
 <p class="date">DARCLOS · TROPOMI-wolkenschaduwdetectie</p>
-<h2>Verplaatste wolkenschaduwen detecteren in satellietwaarnemingen</h2>
+<h2>Verplaatste wolkenschaduwen opsporen in satellietwaarnemingen</h2>
 <p>
-              DARCLOS is een methode voor het detecteren van wolkenschaduwen in TROPOMI-data. De methode gebruikt de geometrie van de zon, wolkhoogte, locatie op het oppervlak en satellietkijkrichting om te bepalen waar een wolkenschaduw op het aardoppervlak hoort te liggen, ook al wordt de wolk zelf door de satelliet op een andere schijnbare locatie gezien.
+              DARCLOS is een methode om wolkenschaduwen in TROPOMI-data op te sporen. De methode gebruikt de geometrie van de zon, wolkhoogte, locatie op het oppervlak en satellietkijkrichting om te bepalen waar een wolkenschaduw op het aardoppervlak hoort te liggen, ook al wordt de wolk zelf door de satelliet op een andere schijnbare locatie gezien.
             </p>
 <p>
               De resulterende wolkenschaduwflag helpt scènes te identificeren waarin driedimensionale wolkeneffecten gemeten reflectanties en afgeleide atmosferische producten beïnvloeden. Dit sluit direct aan op mijn aardobservatiewerk aan aerosolen, oppervlaktereflectie en de fysische interpretatie van satellietmetingen.
@@ -129,12 +130,12 @@
 </figure>
 </div>
 </article>
-<article class="card method-panel">
+<article class="card method-panel" id="eclipse-correction">
 <div class="method-panel-text">
 <p class="date">Zonsverduisteringscorrectie · reflectantieherstel</p>
-<h2>Satellietreflectanties herstellen tijdens zonsverduisteringen</h2>
+<h2>Satellietmetingen herstellen tijdens zonsverduisteringen</h2>
 <p>
-              De zonsverduisteringscorrectie berekent voor elke satellietpixel welk deel van de zonneschijf door de maan wordt geblokkeerd en gebruikt die geometrie om reflectanties aan de top van de atmosfeer te herstellen. Daarmee veranderen eclipsscènes van problematische waarnemingen in bruikbare metingen van de atmosfeer binnen de gedeeltelijke maanschaduw.
+              De zonsverduisteringscorrectie berekent voor elke satellietpixel welk deel van de zonneschijf door de maan wordt geblokkeerd en gebruikt die geometrie om satellietmetingen te herstellen. Daarmee veranderen eclipsscènes van problematische waarnemingen in bruikbare metingen van de atmosfeer binnen de gedeeltelijke maanschaduw.
             </p>
 <p>
               Ik ontwikkelde deze correctie om te onderzoeken hoe verminderd zonlicht gemeten stralingsvelden beïnvloedt. Later maakte de methode het mogelijk om de snelle reactie van ondiepe cumuluswolken op zonsverduisteringen te bestuderen, en zo stralingstransport, satellietwaarnemingen en wolkenfysica met elkaar te verbinden.
@@ -153,7 +154,7 @@
 <div class="method-figure-stack">
 <figure class="theme-image">
 <img alt="Satellite images during the 2005 solar eclipse before and after correction for reduced sunlight" src="../img/software/eclipse-correction-example.png"/>
-<figcaption>Satellietreflectanties tijdens de zonsverduistering van 3 oktober 2005 vóór en na correctie voor verminderd zonlicht. Figuur door Victor J. H. Trees.</figcaption>
+<figcaption>Satellietmetingen tijdens de zonsverduistering van 3 oktober 2005 vóór en na correctie voor verminderd zonlicht. Figuur door Victor J. H. Trees.</figcaption>
 </figure>
 <figure class="theme-image">
 <img alt="Sketch of the solar and lunar disk geometry used in the eclipse-correction method" src="../img/software/eclipse-correction.png"/>
