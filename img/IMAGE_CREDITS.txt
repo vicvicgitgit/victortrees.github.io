@@ -6,7 +6,7 @@ Downloaded file: https://svs.gsfc.nasa.gov/vis/a010000/a011900/a011901/c-1920.jp
 
 Portrait photo
 Image: Portrait of Victor J. H. Trees
-Credit: Portrait photo by Denis Trees
+Credit: Portrait photo by Denis Trees, edited by Karel de Wit
 
 MONKI computational domain
 Image: Sketch of the 3D computational domain of MONKI with photon trajectories and local-estimation directions
