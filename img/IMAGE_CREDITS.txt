@@ -70,7 +70,7 @@ Source: https://science.nasa.gov/venus/venus-facts/
 Used for: Venus research theme card
 
 MONKI and MicroHH cloud-field simulations
-Image: MONKI simulations using MicroHH cloud fields at different horizontal resolutions
+Image: MONKI simulations with cloud fields from MicroHH, a large-eddy simulation cloud model, at different horizontal resolutions.
 Credit: Figure adapted from Wiltink et al. (2026)
 Source: https://doi.org/10.5194/acp-26-7207-2026
 Licence: Creative Commons Attribution 4.0 License

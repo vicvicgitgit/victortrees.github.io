@@ -41,7 +41,7 @@
 <article class="card">
 <h3>First-principles derivation</h3>
 <p>
-            Deriving the working equations for polarised radiative transfer from the underlying physics, rather than treating the model as a black box.
+            Deriving the equations for polarised radiative transfer from the underlying physics, rather than treating the model as a black box.
           </p>
 </article>
 <article class="card">
@@ -74,7 +74,7 @@
               MONKI is the central code development in my work: a three-dimensional Monte Carlo radiative-transfer model for total and polarised radiation reflected and transmitted by planetary atmospheres. I wrote the Fortran code from scratch, including the photon sampling, local-estimation method, polarisation bookkeeping, absorption treatment, and parallel execution needed for large atmospheric simulations.
             </p>
 <p>
-              The code can be used for horizontally homogeneous atmospheres and for fully three-dimensional scenes, such as cloud fields from atmospheric models. This makes MONKI a bridge between fundamental scattering physics and simulated observations of Earth, Venus, and Earth-like exoplanets.
+              The code can be used for horizontally homogeneous atmospheres and for fully three-dimensional scenes, such as cloud fields from 3D cloudy atmospheric models, including large-eddy simulations. MONKI is currently used mainly for Earth and Venus applications, where it computes total and polarised light reflected and transmitted by complex planetary atmospheres.
             </p>
 
 <div class="link-list">
@@ -127,7 +127,7 @@
               The solar-eclipse correction method computes how much of the solar disk is blocked by the Moon for each satellite pixel and uses that geometry to recover satellite measurements. This turns eclipse scenes from problematic observations into usable measurements of the atmosphere inside the Moon’s partial shadow.
             </p>
 <p>
-              I developed this correction to investigate how reduced sunlight affects measured radiation fields. It later made it possible to study the rapid response of shallow cumulus clouds to solar eclipses, linking radiative transfer, satellite observations, and cloud physics.
+              I developed this correction to investigate how reduced sunlight affects measured radiation fields. It later made it possible to study the rapid response of shallow cumulus clouds to solar eclipses.
             </p>
 
 <div class="link-list">
