@@ -194,6 +194,19 @@
 <div class="news-list">
 <article class="news-item with-figure">
 <div class="news-content">
+<p class="date">12 October 2026</p>
+<h2>MONKI paper published</h2>
+<p>After six years of development, our MONKI paper is now published in <em>Geoscientific Model Development</em>. It brings together the physics, numerical methods, and validation behind the code that I built from scratch in modern Fortran. MONKI, short for Monte Carlo KNMI, simulates how sunlight travels through planetary atmospheres: how it is scattered by molecules, aerosols, and clouds, absorbed by gases, and reflected from surfaces. Throughout these interactions, the code follows both the intensity and polarisation of the light.</p>
+<p>A key part of this work was going back to the fundamental physics. I derived a new theoretical framework that allows MONKI to converge robustly even in thick atmospheres where light is scattered many times, such as that of Venus. MONKI is already being used to investigate 3D cloud effects in TROPOMI and SEVIRI satellite measurements and to predict signals for ESA’s upcoming EnVision mission to Venus. In principle, MONKI can be used to simulate reflected light signals from any planet.</p>
+<div class="link-list"><a href="https://gmd.copernicus.org/articles/19/9677/2026/">Read the paper</a></div>
+</div>
+<figure class="entry-figure contain-figure">
+<img alt="Collage of pages from the published MONKI paper in Geoscientific Model Development. Trees et al. (2026), CC BY 4.0." src="img/news/monki-paper-published.png"/>
+<figcaption>Collage of pages from the published MONKI paper in Geoscientific Model Development. Trees et al. (2026), CC BY 4.0.</figcaption>
+</figure>
+</article>
+<article class="news-item with-figure">
+<div class="news-content">
 <p class="date">27 May 2026</p>
 <h2>MONKI used at KNMI to study 3D cloud effects in weather satellite measurements</h2>
 <p>MONKI was used in a study led by Job Wiltink to quantify how three-dimensional cloud-radiation interactions affect satellite-based estimates of global horizontal irradiance: the amount of sunlight that reaches the surface on a horizontal plane.</p><p>Such 3D effects are often hidden within large satellite pixels. Light can be transported horizontally between cloudy and cloud-free parts of a scene, and cloud shadows can reduce the radiation that reaches the surface. As new geostationary weather satellites observe clouds with smaller pixels, these effects become increasingly important for interpreting and correcting satellite-based irradiance products.</p><p>The study combines MONKI with realistic cloud fields from MicroHH, a large-eddy simulation cloud model, and shows how pixel size, cloud structure, and horizontal photon transport shape the retrieved signal.</p><div class="link-list"><a href="https://doi.org/10.5194/acp-26-7207-2026">Read the paper</a></div>

@@ -10,8 +10,8 @@ Credit: Portrait photo by Denis Trees, edited by Karel de Wit
 
 MONKI computational domain
 Image: Sketch of the 3D computational domain of MONKI with photon trajectories and local-estimation directions
-Credit: Figure from Trees et al. (2025), prepared for this website from the published figure
-Source: https://doi.org/10.5194/egusphere-2025-2197
+Credit: Figure from Trees et al. (2026), prepared for this website from the published figure
+Source: https://gmd.copernicus.org/articles/19/9677/2026/
 
 DARCLOS cloud-shadow geometry
 Image: Sketch of the cloud-shadow geometry used in the DARCLOS algorithm
@@ -138,3 +138,9 @@ Credit: Universal Images Group North America LLC / Alamy Stock Photo. Image ID: 
 Source: Alamy licensed image, "A rainbow forms when sunlight is refracted by spherical water droplets in the atmosphere, producing the primary arcs of colour"
 Licence: Adapted and used under license from Alamy
 Used for: Story page “Are there rainbows on other planets?” / “Zijn er regenbogen op andere planeten?”
+
+MONKI publication collage
+File: img/news/monki-paper-published.png
+Image: Uploaded collage of pages from the MONKI paper
+Credit: Trees et al. (2026), Geoscientific Model Development, CC BY 4.0
+Source: https://gmd.copernicus.org/articles/19/9677/2026/
